@@ -13,8 +13,7 @@
 ### LIBRARIES ###
 from sys import stdout
 
-## GLOBALS ###
-char_list = []
+
 
 ### FUNCTIONS ###
 
@@ -85,8 +84,6 @@ def Main():
     else:
         Bin8Bit(binary_data)
 
-    # delete the list
-    del char_list
 
 ### MAIN ###
 Main()
