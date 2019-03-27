@@ -19,7 +19,7 @@ def encryption():
 		text = sys.stdin.readline().rstrip()
 		
 		# If input is empty, break 
-		if (cipher == ""):
+		if (text == ""):
 			break
 
 		# Initialize varibales
