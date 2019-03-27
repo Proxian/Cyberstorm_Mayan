@@ -3,7 +3,7 @@
  ####################################################################
 #                                                                   #
 #   Authors: Justin Berthelot,                                      #
-#                                                                   #
+#   Github link: https://github.com/Proxian/Cyberstorm_Mayan/       #                                                                #
 #                                                                   #
 #   Date: 03 / 21 / 19                                              #
 #   Description: A programmatic mathematically based method of      #
