@@ -2,7 +2,8 @@
 
  ####################################################################
 #                                                                   #
-#   Authors: Justin Berthelot,                                      #
+#   Authors: Justin Berthelot, Dawson Markham, Matthew Eldridge     #
+#   Ryan Utley, Caleb Snook, Emily Rumfola, Valentin Le Gall        #
 #   Github link: https://github.com/Proxian/Cyberstorm_Mayan/       #                                                                #
 #                                                                   #
 #   Date: 03 / 21 / 19                                              #
