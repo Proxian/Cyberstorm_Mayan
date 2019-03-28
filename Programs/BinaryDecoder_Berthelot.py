@@ -3,7 +3,7 @@
  ####################################################################
 #                                                                   #
 #   Authors: Justin Berthelot,                                      #
-#                                                                   #
+#   Github link: https://github.com/Proxian/Cyberstorm_Mayan/       #
 #                                                                   #
 #   Date: 03 / 21 / 19                                              #
 #   Description: Translates 7-bit and 8-bit binary to ASCII         #
