@@ -3,7 +3,7 @@
 # Name:    Dawson Markham
 # Date:    4/5/2019
 # Program: FTP (storage) Covert Channel
-# Descritption: Program joins FTP server and goes to the directory as
+# Description: Program joins FTP server and goes to the directory as
 #		specified by mode. A list of files is then made and 
 #		their permissions are translated to binary. Then binary
 #		message is decoded as specified by mode by implementing
