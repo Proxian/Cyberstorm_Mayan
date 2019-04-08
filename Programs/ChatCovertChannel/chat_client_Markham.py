@@ -55,6 +55,7 @@ def CovertTiming():
 	# As long as the received data is not "EOF" continue listening
 	while (data.rstrip("\n") != "EOF"):
 		sys.stdout.write(data)		# Print data as it is received
+		sys.stdout.flush()
 		t0 = time()			# Save the start time
 		data = s.recv(4096)		# Listen for next piece of data
 		t1 = time()			# Save the end time
