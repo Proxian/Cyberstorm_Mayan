@@ -1,7 +1,8 @@
 ############################################################################
 #                                                                           #
 #   Team:       Mayans                                                      #
-#   Authors:    Justin Berthelot, Dawson Markham, Emily Rumfola             #
+#   Authors:    Dawson Markham, Justin Berthelot, Emily Rumfola,            #
+#               Caleb Snook, Matthew Eldridge, Valentin Le Gall, Ryan Utley #
 #   Date:       04/23/19                                                    #
 #   Program: Chat (Timing) Covert Channel                                   #
 #   Description: Program connects to a host via a specified port. The time  #
