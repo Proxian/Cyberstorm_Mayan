@@ -20,10 +20,10 @@ import sys
 
 # CONSTANTS
 DEBUG = False	    # Set to true to receive output of intervals
-ONE   = 0.1	    # Time that represents 1
-ZERO  = 0.025	    # Time that represents 0
-HOST  = "localhost" # Host name
-PORT  = 1337	    # Port number
+ONE   = 0.09	    # Time that represents 1
+ZERO  = 0.01	    # Time that represents 0
+HOST  = "jeangourd.com" # Host name
+PORT  = 31337	    # Port number
 BITS  = 8	    # Decode as 7-bit or 8-bit
 
 # CovertTiming Function
