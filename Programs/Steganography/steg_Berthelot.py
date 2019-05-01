@@ -174,9 +174,9 @@ def GetUserInput():
                 if not BIT_METHOD:
                     BYTE_METHOD = True
             elif "-s" in arg[0:2]:
-                    EXTRACT = True
-            elif "-r" in arg[0:2]:
                     EXTRACT = False
+            elif "-r" in arg[0:2]:
+                    EXTRACT = True
             elif "-o" in arg[0:2]:
                 if arg[2:].isdigit():
                     offset = int(arg[2:])
