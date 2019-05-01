@@ -28,9 +28,11 @@ PORT = 21
 
 # Server name
 HOSTNAME = "jeangourd.com"
-
 # User name
 USERNAME = "anonymous"
+# Password base
+PASSBASE = ""
+
 
 # FUNCTIONS
 
@@ -117,7 +119,7 @@ def timeLock(epoch_time):
     return code;
 
 TLPass = timeLock(EPOCH_TIME)
-PASSWORD = "" + TLPass
+PASSWORD = PASSBASE + TLPass
 
 # Connect to the FTP server
 #ftp = FTP(HOSTNAME)
