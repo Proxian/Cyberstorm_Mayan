@@ -18,7 +18,7 @@ DEBUG = False
 BIT_METHOD = False
 BYTE_METHOD = False
 EXTRACT = False
-SWAP_BIT_DATA = False   # Stores the bit data from right-to-left
+SWAP_BIT_DATA = False   # Stores the bit data from right-to-left if True
 
 offset = 0
 interval = 1
