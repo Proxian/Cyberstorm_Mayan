@@ -1,0 +1,2 @@
+python steg_Final.py -B -r -o50 -i16 -whidden7.png > message7
+python steg_Final.py -b -r -i1 -o516 -whidden6.png > message6
