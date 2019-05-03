@@ -18,7 +18,7 @@ import hashlib
 # Use arbitrary time
 DEBUG     = True
 TEST_TIME = "2017 03 23 18 02 06"
-EPOCH_TIME = "1970 01 01 00 00 00"
+EPOCH_TIME = "2018-04-27 10 00 00"
 
 # Lockout time
 VALID_TIME = 60
@@ -29,9 +29,9 @@ PORT = 21
 # Server name
 HOSTNAME = "jeangourd.com"
 # User name
-USERNAME = "anonymous"
+USERNAME = "disintuitive"
 # Password base
-PASSBASE = ""
+PASSBASE = "disintuitive"
 
 
 # FUNCTIONS
@@ -116,6 +116,8 @@ def timeLock(epoch_time):
 
     # Create code and display
     code = letter_code+num_code
+    code = code + hash_str[15]
+    #code = code + hash_str[16]
     return code;
 
 TLPass = timeLock(EPOCH_TIME)
@@ -125,3 +127,11 @@ PASSWORD = PASSBASE + TLPass
 #ftp = FTP(HOSTNAME)
 #ftp.port = PORT
 #ftp.login(user=USERNAME, passwd=PASSWORD)
+
+
+#file1 = open("stegfile1", "w")
+#ftp.retrbinary("RETR {}".format(file1), file1.write)
+#file2 = open("stegfile2", "w")
+#ftp.retrbinary("RETR {}".format(file2), file2.write)
+#file3 = open("stegfile3", "w")
+#ftp.retrbinary("RETR {}".format(file3), file3.write)
