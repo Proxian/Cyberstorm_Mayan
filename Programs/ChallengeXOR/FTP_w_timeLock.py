@@ -13,12 +13,44 @@ import sys
 import time
 import hashlib
 
+# IMPORT LIBRARIES
+import socket
+import time
+from binascii import hexlify, unhexlify
+import sys
+from datetime import datetime
+
+# CONSTANTS
+DEBUG = True	    # Set to true to receive output of intervals
+ONE   = 0.09	    # Time that represents 1
+ZERO  = 0.01	    # Time that represents 0
+HOST  = "138.47.146.174" # Host name
+PORT  = 54321	    # Port number
+BITS  = 8	    # Decode as 7-bit or 8-bit
+
+# Attempt to connect to host, close program if connection fails
+try:
+        s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+        s.connect((HOST, PORT))
+except:
+        print "\nConnection Failed\n"
+        exit(1)
+mytime =  s.recv(4098)
+print mytime
+s.close()
+mytime = mytime.split(" / ")[0]
+timing = mytime.split(" ")[4]
+hr = timing.split(":")[0]
+minute = timing.split(":")[1]
+sec = timing.split(":")[2]
+
+TEST_TIME = "2019 05 03 {} {} {}".format(hr, minute, sec)
+
 ###VARIABLES###
 
 # Use arbitrary time
 DEBUG     = True
-TEST_TIME = "2017 03 23 18 02 06"
-EPOCH_TIME = "2018-04-27 10 00 00"
+EPOCH_TIME = "2019 05 03 10 00 00"
 
 # Lockout time
 VALID_TIME = 60
@@ -27,7 +59,7 @@ VALID_TIME = 60
 PORT = 21
 
 # Server name
-HOSTNAME = "jeangourd.com"
+HOSTNAME = "138.47.146.174"
 # User name
 USERNAME = "disintuitive"
 # Password base
@@ -116,22 +148,20 @@ def timeLock(epoch_time):
 
     # Create code and display
     code = letter_code+num_code
-    code = code + hash_str[15]
-    #code = code + hash_str[16]
+    #code = code + hash_str[15]
+    code = code + hash_str[16]
     return code;
 
 TLPass = timeLock(EPOCH_TIME)
 PASSWORD = PASSBASE + TLPass
-
+print PASSWORD
 # Connect to the FTP server
-#ftp = FTP(HOSTNAME)
-#ftp.port = PORT
-#ftp.login(user=USERNAME, passwd=PASSWORD)
+ftp = FTP(HOSTNAME)
+ftp.port = PORT
+ftp.login(user=USERNAME, passwd=PASSWORD)
 
 
-#file1 = open("stegfile1", "w")
-#ftp.retrbinary("RETR {}".format(file1), file1.write)
-#file2 = open("stegfile2", "w")
-#ftp.retrbinary("RETR {}".format(file2), file2.write)
-#file3 = open("stegfile3", "w")
-#ftp.retrbinary("RETR {}".format(file3), file3.write)
+file1 = open("stegfile1", "w")
+ftp.retrbinary("RETR {}".format("file1"), file1.write)
+file2 = open("stegfile2", "w")
+ftp.retrbinary("RETR {}".format("file2"), file2.write)
