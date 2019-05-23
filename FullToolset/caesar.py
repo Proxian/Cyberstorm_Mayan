@@ -13,12 +13,13 @@ ROT = 0
 ucase = string.ascii_uppercase
 lcase = string.ascii_lowercase
 allletters = string.ascii_letters
-alphabet = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789`~!@#$%^&*()-_=+[{]}\|;:'\",<.>/? "
+alphabet = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789`~!@#$%^&*()-_=+[{]}\|;:'" + "\\" + ",<.>/? "
 
 if len(sys.argv) == 2:
     try:
         inputfile = open(sys.argv[1], "r")
         myfile = inputfile.read()
+        inputfile.close()
     except:
         print "Could not open file {}".format(sys.argv[1])
         exit(1)
@@ -26,6 +27,7 @@ elif len(sys.argv) == 3:
     try:
         inputfile = open(sys.argv[1], "r")
         myfile = inputfile.read()
+        inputfile.close()
     except:
         print "Could not open file {}".format(sys.argv[1])
         exit(1)
