@@ -14,7 +14,6 @@ ucase = string.ascii_uppercase
 lcase = string.ascii_lowercase
 allletters = string.ascii_letters
 alphabet = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789`~!@#$%^&*()-_=+[{]}\|;:'\",<.>/? "
-alphabet = ' -,;:!?/.' + "'" + '"()[]$&#%012345789aAbBcCdDeEfFgGhHiIjJkKlLmMnNoOpPqQrRsStTuUvVwWxyYzZ'
 
 if len(sys.argv) == 2:
     try:
