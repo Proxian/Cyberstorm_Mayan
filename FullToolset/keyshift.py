@@ -11,7 +11,7 @@ ucase = string.ascii_uppercase
 lcase = string.ascii_lowercase
 allletters = string.ascii_letters
 alphabet = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789`~!@#$%^&*()-_=+[{]}\|;:'" + "\\" + ",<.>/? "
-otheralphabet = "Teflon'sabcdghijkmpqrtuvwxyzABCDEFGHIJKLMNOPQRSUVWXYZ0123456789`~!@#$%^&*()-_=+[{]}\|;:\",<.>/? "
+otheralphabet = ""
 
 key = ""
 mydict = ""
